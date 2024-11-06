@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brilliant</title>
+</head>
+<style>
+    .body{
+        height: 100%;
+        width: 100%;
+    }
+.navbar{
+    display: flex;
+    justify-content: space-around;
+
+}
+.logo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 40px;
+    font-size: larger;
+}
+.login{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-top: 82px;
+    font-size:26px;
+    border: 20px grey;
+        border-radius: 50px;
+        cursor: pointer;
+        height: 48px;
+        width: 90.66px;
+
+   
+}
+.image1{
+    margin-top: 80px;
+display: flex;
+justify-content: center;
+
+
+}
+.image1 img{
+    height: 360px;
+    width: 1060px;
+}
+.hometext{
+    justify-content: center;
+    display: flex;
+    
+}
+.hometext pre{
+font-family:   Arial, sans-serif;
+font-weight: 500;
+font-size: x-large;
+font: 1.8em sans-serif;
+}
+
+.get-started-btn {
+        padding: 15px 40px;
+        background-color: #15B441;
+        color: #ffffff;
+        font-size: 30px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        text-align: center;
+        text-decoration: none;
+        height: 64px;
+        width: 294px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+       
+    }
+    .but-start{
+        display: flex;
+        
+        justify-content: center;
+
+       
+    }
+
+    
+    .get-started-btn:hover {
+        background-color:#49D470;
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+        transform: translateY(-2px);
+    }
+    .get-started-btn:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px #49D470;
+    }
+    .subject-panel{
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .subject{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 40px;
+    }
+    .info{
+        background-color: black;
+        background-image: url(https://brilliant.org/images/homepage/social-proof-background.svg);
+        background-position: center;
+        height: 436px;
+        width: 1875px;
+      
+    }
+    .star{
+        display: flex;
+        color: white;
+        
+
+    }
+.rating{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+}
+.consept{
+    display: flex;
+
+}
+.consept-image{
+    height: 599px;
+    width: 937.5px;
+}
+.consept-image img{
+    position: absolute;
+    left: -341px;
+    width: 1200.5px;
+    height: 598px;
+
+}
+.h1-conspt{
+   
+    font-family:Arial,  sans-serif;
+    width: 100%;
+    font-size: 75px;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: -0.025rem;
+    line-height: 124%;
+
+}
+.p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 90px;
+    width: 480px;
+}
+.text1{
+    font-family:Arial;
+    width: 50%;
+    font-size: 80px;
+    font-weight: normal;
+    text-align: left;
+letter-spacing: normal;
+    line-height: 110%;
+    margin-top: 80px;
+}
+.design-info{
+    position: relative;
+    background-image: url(https://brilliant.org/images/homepage/experts-bg.svg);
+    background-repeat: repeat;
+   
+    background-size: auto;
+    
+    background-position: center;
+    background-color:black;
+    height: 436px;
+    width: 1875px;
+    color: white;
+}
+.design-infotext2{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.design-infotext1{
+    font-family: Georgia, serif;
+    line-height: 1.33;
+    font-size: 2.25rem;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: -0.025rem;
+    margin-bottom: 1rem;
+}
+.design{
+    flex-direction: column;
+   
+    width:1270px;
+    height: 270px;
+    
+   
+    margin-inline-start: auto;
+    
+    margin-inline-end: auto;
+    gap: 72px;
+   
+    align-items: stretch;
+   
+
+}
+.logos{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: bolder;
+    color: grey;
+    opacity: 0.7;
+}
+.guid{
+    height: 912px;
+    width: 1845px;
+    display: flex;
+  
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+    padding-inline-start: 1.25rem;
+    padding-inline-end:1.25rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: rgb(248, 248, 248);
+}
+.guid-text{
+    font-family:  sans-serif ;
+    line-height: 1.33;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-weight:600;
+    font-size: 2.25rem;
+    letter-spacing: -0.025rem
+}
+.stack{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+    max-width: 1142px;
+    width:100%;
+}
+.tablelist{
+    display: flex;
+    flex-flow: row;
+   
+    justify-content: space-between;
+    width: 556px;
+    height: 58px;
+    margin-bottom: 1rem;
+    padding-inline-start:0.375rem ;
+    padding-inline-end:0.375rem ;
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+    gap: 0px;
+    z-index: 2;
+    background:#f2f2f2 ;
+    border-radius: 1rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    align-items: center;
+    font-weight: bold;
+    color: gray;
+    
+}
+.sub{
+    margin: 15px;
+}
+.analysis{
+    height: 518px;
+    position: relative;
+    z-index: 1;
+    width: 1130px;
+
+}
+.start-your-journey{
+   
+    display: flex;
+  
+    align-items: center;
+
+    justify-content: center;
+   
+    flex-direction: column;
+
+    width:1854px ;
+    height:609px;
+    
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-inline-end: 1.25rem;
+    background-image: url(https://brilliant.org/images/homepage/upsell-bg.svg);
+    background-color:#080f28;
+    background-size: cover;
+    background-position: center;
+    color:#ffffff ;
+    position: absolute;
+    top: 373.75rem;
+}
+.journey-title{
+   
+    display: flex;
+   
+    align-items: center;
+    
+    flex-direction: column;
+    gap: 72px;
+    text-align: center;
+    height: 305px;
+    width: 751px;
+    position: absolute;
+    top: 4rem;;
+}
+.text-head{
+    font-family:auto;
+    line-height: 1.33;
+    font-weight: 500;
+    font-size: 100px;
+     margin-bottom: 1.5rem;
+
+}
+.describe{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    margin-bottom: 1.5rem;
+}
+.ap{
+    height: 60px;
+    width: 167px;
+
+}
+.play{
+    height: 60px;
+    width: 167px;
+}
+.butten-dow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    flex-direction: row;
+    gap: 1.5rem;
+    width: 1216px;
+    
+}
+
+
+</style>
+<body>
+    <div class="navbar">
+        <div class="logo" ><h1>Brilliant</h1></div>
+        <div class="login">Log in</div>
+
+    </div>
+       <div class="homepage"><div class="image1"><img src="https://brilliant.org/images/homepage/learn-by-doing.png" alt=""></div>
+    <div class="hometext"><pre>Interactive problem solving that’s effective and fun.
+
+              Get smarter in 15 minutes a day.
+    </pre></div>
+    <div class="but-start">
+<div class="get-started-btn">Get Started</div>
+ </div>
+ <br>
+ <br>
+ <br><br><br><br>
+ <hr style="opacity: 0.5;height: 2px; color: gray;">
+ <div class="subject-panel">
+    <div class="subject">
+        <div class="icon">
+        </div>
+        <div class="text">Math</div>
+    </div>
+    <div class="subject">
+        <div class="icon">
+        </div>
+        <div class="text">Data Analysis</div>
+    </div>
+    <div class="subject">
+        <div class="icon">
+        </div>
+        <div class="text">Computer Science</div>
+    </div>
+    <div class="subject">
+        <div class="icon">
+        </div>
+        <div class="text">Programming & AI</div>
+    </div>
+    <div class="subject">
+        <div class="icon"></div>
+        <div class="text">Science & Engineering</div>
+    </div>
+ </div>
+    </div>
+    <div class="info">
+       <div class="info-heading">Join over 10 million learners worldwide</div>
+       <div class="info-panel">
+        <div class="rating">
+            <div class="star">
+                <div class="1">★</div>
+                <div class="1">★</div>
+                <div class="1">★</div>
+                <div class="1">★</div>
+                <div class="1">★</div>
+            </div>
+            <div class="star-text">Over 50,000 5-star app reviews</div>
+        </div>
+        <div class="review-text">
+            <div>The New Yerk Time</div>
+            <div>The Atlentic</div>
+        </div>
+        <div class="info-app"></div>
+       </div>
+    </div>
+    <div class="consept" style="height: 599px ; width: 1875px;;">
+<div class="consept-image"><img src="https://brilliant.org/images/homepage/concepts-that-click.svg" alt="" ></div>
+
+    <div class="text1"><h1 class="h1-conspt" style="font-family: Georgia,s">Concepts
+        <br>
+    The Click</h1>
+   <p style="font-family: Arial, Helvetica, sans-serif;font-size:20px ;">Interactive lessons make even complex ideas easy to grasp. Instant, custom feedback accelerates your understanding.</p>
+    </div>
+</div>
+
+<div class="consept" style="height: 599px ; width: 1875px;;">
+   
+    
+        <div class="text1"><h1 class="h1-conspt" style="font-family: Georgia,s">Concepts
+            <br>
+        The Click</h1>
+       <p style="font-family: Arial, Helvetica, sans-serif;font-size:20px ;">Interactive lessons make even complex ideas easy to grasp. Instant, custom feedback accelerates your understanding.</p>
+        </div>
+        <div class="consept-image"><img src="https://brilliant.org/images/homepage/redesign/learn-at-your-level.svg" alt="" ></div>
+    </div>
+
+    <div class="consept" style="height: 599px ; width: 1875px;;">
+        <div class="consept-image"><img src="https://brilliant.org/images/homepage/redesign/stay-motivated.svg" alt="" ></div>
+        
+            <div class="text1"><h1 class="h1-conspt" style="font-family: Georgia,s">Concepts
+                <br>
+            The Click</h1>
+           <p style="font-family: Arial, Helvetica, sans-serif;font-size:20px ;">Interactive lessons make even complex ideas easy to grasp. Instant, custom feedback accelerates your understanding.</p>
+            </div>
+        </div>
+
+        <div class="consept" style="height: 599px ; width: 1875px;;">
+           
+            
+                <div class="text1"><h1 class="h1-conspt" style="font-family: Georgia,s">Concepts
+                    <br>
+                The Click</h1>
+               <p style="font-family: Arial, Helvetica, sans-serif;font-size:20px ;">Interactive lessons make even complex ideas easy to grasp. Instant, custom feedback accelerates your understanding.</p>
+                </div>
+                <div class="consept-image"><img src="https://brilliant.org/images/homepage/redesign/guided-lessons.svg" alt="" ></div>
+            </div>
+             <div class="consept" style="height: 599px ; width: 1875px;;">
+            <div class="consept-image"><img src="https://brilliant.org/images/homepage/redesign/more-effective.svg" alt="" ></div>
+            
+                <div class="text1"><h1 class="h1-conspt" style="font-family: Georgia,s">Concepts
+                    <br>
+                The Click</h1>
+               <p style="font-family: Arial, Helvetica, sans-serif;font-size:20px ;">Interactive lessons make even complex ideas easy to grasp. Instant, custom feedback accelerates your understanding.</p>
+                </div>
+            </div>
+    <div class="design-info">
+        <div class="design">
+            <div class="design-text1"><h2 class="design-infotext1">Designed by experts</h2>
+            <p class="design-infotext2">All of our courses are crafted by award-winning teachers and professionals from top institutions.</p></div>
+            <div class="logos">
+                <div class="2">sanford</div>
+                <div class="2">google</div>
+                <div class="2">caltech</div>
+                <div class="2">HARVARD</div>
+                <div class="2">Microsoft</div>
+                <div class="2">MIT</div>
+            </div>
+        </div>
+    
+    </div>
+    <div class="guid">
+        <div class="stack">
+            <h2 class="guid-text">Guided paths for every journey</h2>
+            <div class="guided-path">
+                <div class="tablelist">
+                    <div class="sub">Math</div>
+                    <div class="sub">CS & Programing</div>
+                    <div class="sub">Data Analysis</div>
+                    <div class="sub">Science</div>
+                </div>
+                <div class="analysis">
+                  <div class="courses">
+                    <div class="course">
+                        <div class="title">MATH COURSES</div>
+                        <div class="deatails">
+                            <div class="nameof-c">
+                                <div class="icon"></div>
+                                <div class="name">Solving Equations</div>
+                            </div>
+                            <div class="nameof-c">
+                                <div class="icon"></div>
+                                <div class="name">Systems of Equations</div>
+                            </div>
+                            <div class="nameof-c">
+                                <div class="icon"></div>
+                                <div class="name">Real World Algebra</div>
+                            </div>
+                            <div class="nameof-c">
+                                <div class="icon"></div>
+                                <div class="name">Understanding Graphs</div>
+                            </div>
+                            <div class="nameof-c">
+                                <div class="icon"></div>
+                                <div class="name">Geometry I</div>
+                            </div>
+                            <div class="nameof-c">
+                                <div class="icon"></div>
+                                <div class="name">Vectors</div>
+                            </div>
+                            <div class="nameof-c">
+                                <div class="icon"></div>
+                                <div class="name">Calculus in a Nutshell</div>
+                            </div>
+                            <div class="addd">
+                                <div class="icon-plus"></div>
+                                <div class="name-plus"></div>
+                            </div>
+                            
+                    </div>
+                    <div class="video"></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="start-your-journey">
+<div class="journey-title">
+    <div class="title-text">
+       <h2 class="text-head">Start Your Journey</h2>
+       <p class="describe">Join over 10 million people learning interactively.</p>
+    </div>
+    <div class="but-start">
+        <div class="get-started-btn">Get Started</div>
+         </div>
+
+<div class="butten-dow">
+    <div class="ap"><img src="https://static.vecteezy.com/system/resources/previews/012/871/374/original/app-store-download-button-in-white-colors-download-on-the-apple-app-store-free-png.png" alt="" style="height: 60px;"></div> 
+    
+    <div class="play"><img src="https://static.vecteezy.com/system/resources/previews/012/871/365/original/google-play-store-download-button-in-black-colors-download-on-the-google-play-store-free-png.png" alt="" style="height: 60px;"> </div>
+</div>
+    </div>
+</body>
+</html>
